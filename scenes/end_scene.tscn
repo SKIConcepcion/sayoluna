@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://uih8enklscj3"]
+
+[ext_resource type="Script" uid="uid://bltpucmrs45o4" path="res://scripts/end_scene.gd" id="1_s7dif"]
+[ext_resource type="FontFile" uid="uid://d31hlyei8pa20" path="res://assets/fonts/Ephesis-Regular.ttf" id="2_wfflf"]
+[ext_resource type="Texture2D" uid="uid://usngxsd60ams" path="res://assets/broken_moon.png" id="7_gxua3"]
+
+[node name="EndScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s7dif")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1536.0
+offset_bottom = 864.0
+color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[node name="Padding" type="ColorRect" parent="."]
+z_index = -9
+layout_mode = 0
+offset_left = -376.0
+offset_top = -320.0
+offset_right = 1896.0
+offset_bottom = 1184.0
+mouse_filter = 2
+color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -56.0
+offset_right = 144.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = -15
+theme_override_fonts/font = ExtResource("2_wfflf")
+theme_override_font_sizes/font_size = 52
+text = "lorem ipsum"
+horizontal_alignment = 1
+
+[node name="Moon01" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(768, 320)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("7_gxua3")

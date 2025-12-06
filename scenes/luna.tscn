@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://b3qvk7gspf1kp"]
+
+[ext_resource type="Script" uid="uid://100gs57d8x6j" path="res://scripts/player.gd" id="1_jsouy"]
+[ext_resource type="Texture2D" uid="uid://5gvfkehd55t5" path="res://assets/characters/luna_01.png" id="2_k0b6x"]
+[ext_resource type="Texture2D" uid="uid://c2rq2wes1mhq7" path="res://assets/characters/luna_04.png" id="3_8jtr5"]
+[ext_resource type="Texture2D" uid="uid://chfnx1it5ke80" path="res://assets/characters/luna_02.png" id="4_xxl1i"]
+[ext_resource type="Texture2D" uid="uid://ca0kl3888nsqu" path="res://assets/characters/luna_03.png" id="5_viqqh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jej6c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_k0b6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8jtr5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_xxl1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_viqqh")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 2.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ur7pv"]
+radius = 25.0
+height = 130.0
+
+[node name="Luna" type="CharacterBody2D"]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_jsouy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jej6c")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ur7pv")

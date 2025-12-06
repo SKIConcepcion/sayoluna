@@ -1,0 +1,307 @@
+[gd_scene load_steps=4 format=3 uid="uid://cauken347jjui"]
+
+[ext_resource type="Script" uid="uid://di648v7jiv02f" path="res://scripts/credits_screen.gd" id="1_wiy8m"]
+[ext_resource type="FontFile" uid="uid://d31hlyei8pa20" path="res://assets/fonts/Ephesis-Regular.ttf" id="2_m2eu1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1amdp"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="CreditsScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wiy8m")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1536.0
+offset_bottom = 864.0
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -136.0
+offset_top = 48.0
+offset_right = 142.0
+offset_bottom = 132.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 64
+text = "Sa 'yo, Luna"
+horizontal_alignment = 1
+
+[node name="Version" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 56.0
+offset_top = -312.0
+offset_right = 138.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 24
+text = "version 1.0"
+horizontal_alignment = 1
+
+[node name="Programming" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -456.0
+offset_top = -248.0
+offset_right = -178.0
+offset_bottom = -184.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 48
+text = "Programming"
+
+[node name="Subtext" type="Label" parent="Programming"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -139.0
+offset_top = 24.0
+offset_right = 139.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 36
+text = "sean concepcion"
+
+[node name="Art" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -456.0
+offset_top = -104.0
+offset_right = -64.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 48
+text = "Art & Animation"
+
+[node name="Subtext" type="Label" parent="Art"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = 24.0
+offset_right = 82.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 36
+text = "sean concepcion"
+
+[node name="Music" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -456.0
+offset_top = 40.0
+offset_right = -64.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 48
+text = "Music & Sound"
+
+[node name="Subtext" type="Label" parent="Music"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = 24.0
+offset_right = 669.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_constants/line_spacing = -10
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 36
+text = "'Simplicity'  and  'Glow' by Scott Buckley
+- released under CC-BY 4.0.  www.scottbuckley.com.au
+
+Other sfx retrieved from Pixabay and Mixkit"
+
+[node name="Design" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 208.0
+offset_top = -248.0
+offset_right = 486.0
+offset_bottom = -184.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 48
+text = "Game Design"
+
+[node name="Subtext" type="Label" parent="Design"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -139.0
+offset_top = 24.0
+offset_right = 139.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 36
+text = "sean concepcion"
+
+[node name="Writing" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 208.0
+offset_top = -104.0
+offset_right = 600.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 48
+text = "Writing & Narrative"
+
+[node name="Subtext" type="Label" parent="Writing"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = 24.0
+offset_right = 82.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 36
+text = "sean concepcion"
+
+[node name="Playtesting" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 208.0
+offset_top = 40.0
+offset_right = 600.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 48
+text = "Playtesting"
+
+[node name="Subtext" type="Label" parent="Playtesting"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = 24.0
+offset_right = 82.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 36
+text = "anon"
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -96.0
+offset_right = 64.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("2_m2eu1")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_1amdp")
+text = "back"
+
+[node name="Padding" type="ColorRect" parent="."]
+z_index = -9
+layout_mode = 0
+offset_left = -376.0
+offset_top = -320.0
+offset_right = 1896.0
+offset_bottom = 1184.0
+mouse_filter = 2
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
